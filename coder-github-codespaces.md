@@ -1,3 +1,44 @@
+## Executive Summary: Coder vs GitHub Codespaces
+
+### Core Difference
+**Coder** is self-hosted infrastructure you control. **GitHub Codespaces** is a fully-managed SaaS running on GitHub's Azure cloud.
+
+### Key Advantages
+
+**Coder:**
+- **Full infrastructure control** — runs on your cloud/on-prem, data never leaves your environment
+- **Maximum flexibility** — provision VMs, containers, any cloud provider, spot instances
+- **Cost control** — pay cloud provider directly, optimize with Terraform
+- **Works with any Git provider** (GitHub, GitLab, Bitbucket)
+- **Enterprise security** — air-gapped deployments, private networks, data sovereignty
+
+**GitHub Codespaces:**
+- **Zero setup** — click button, code in 30 seconds, no infrastructure to manage
+- **Native GitHub integration** — one-click from repos, PRs, branches
+- **Free tier** — 60-120 hours/month free
+- **Instant availability** — no installation or maintenance required
+- **Perfect for GitHub workflows** — seamless authentication and access
+
+### Decision Framework
+
+| Choose Coder if you... | Choose Codespaces if you... |
+|------------------------|----------------------------|
+| Need data sovereignty/compliance | Want zero infrastructure management |
+| Require on-premises or air-gapped | Are deeply integrated with GitHub |
+| Use GitLab, Bitbucket, or multiple Git providers | Only use GitHub repositories |
+| Need VM-based or complex environments | Container workspaces are sufficient |
+| Have high usage (cost optimization critical) | Have light-moderate usage (free tier works) |
+| Must control infrastructure location | Trust GitHub/Microsoft infrastructure |
+
+### Trade-Off Summary
+- **Coder**: More setup, maximum control, runs anywhere, any Git provider
+- **Codespaces**: Zero setup, GitHub-only, SaaS convenience, usage-based pricing
+
+### Bottom Line
+Choose **Coder** for infrastructure autonomy and enterprise control. Choose **Codespaces** for instant productivity with zero management overhead—if you're all-in on GitHub.
+
+
+
 ## Comparison: Coder vs GitHub Codespaces
 
 ### **Core Philosophy**
